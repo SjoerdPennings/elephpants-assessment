@@ -79,6 +79,9 @@
                     <x-nav-link :href="route('login')">
                         Log In
                     </x-nav-link>
+                    <x-nav-link :href="route('register')">
+                        Register
+                    </x-nav-link>
                 </div>
             @endif
         </div>
@@ -123,6 +126,9 @@
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <x-responsive-nav-link :href="route('login')">
             Log In
+        </x-responsive-nav-link>
+        <x-responsive-nav-link :href="route('register')">
+            Register
         </x-responsive-nav-link>
     </div>
     @endif

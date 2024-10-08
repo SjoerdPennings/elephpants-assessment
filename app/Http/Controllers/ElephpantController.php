@@ -32,4 +32,11 @@ class ElephpantController extends Controller
             'title' => $title
         ]);
     }
+
+    public function add(int $elephpant_id)
+    {
+        $user = auth()->user();
+        $user->elephpants()->attach($elephpant_id);
+        return redirect()->back();
+    }
 }
