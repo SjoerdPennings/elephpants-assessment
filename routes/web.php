@@ -11,7 +11,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-    Route::get('/herd', [ElephpantController::class, 'show'])->name('herd');
+    Route::get('/herd/{id?}', [ElephpantController::class, 'show'])->name('herd');
 });
 Route::get('/ranking', [RankingController::class, 'index'])->name('ranking');
 Route::get('/', [ElephpantController::class, 'index'])->name('home');

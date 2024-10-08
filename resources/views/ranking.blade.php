@@ -8,7 +8,6 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="overflow-x-auto shadow-sm sm:rounded-lg">
-                <!--TODO sp: Ranking list-->
                 <table class="w-full text-sm text-center text-gray-500 dark:text-white">
                     <thead>
                         <tr class="bg-white border-b dark:bg-gray-700 dark:border-gray-600 text-xl">
