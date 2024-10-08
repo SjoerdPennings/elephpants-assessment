@@ -8,8 +8,9 @@ Di 08-10
 09:15-09:45 - Backend gemaakt voor Ranking. 
 09:45-10:05 - PHPUnit tests gemaakt.
 10:05-10:15 - Herd aangepast zodat je de herds van anderen kan zien. (/herd/{id}) 
+10:15-10:40 - Models/DB relatie aangepast van one-to-many naar many-to-many, dit is meer zoals elephpants.me werkt.
 
-02:30/04:00 Totaal
+02:55/04:00 Totaal
 
 
 Installatie:
@@ -22,5 +23,7 @@ Inloggegevens:
 - Password: password
 
 TODO:
-- View other user herds [DONE]
-- Add elephpants to collection
+- Zoekbalk voor elephpants [WIP]
+- Zoekbalk voor gebruikers die een bepaalde elephpant hebben
+  - Deze kan mogelijk met de zoekresultaten van de elephpants gecombineerd worden. Laat deze resultaten apart zien.
+- Voeg elephpants toe aan je herd.

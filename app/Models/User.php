@@ -47,6 +47,6 @@ class User extends Authenticatable
 
     public function elephpants()
     {
-        return $this->hasMany(Elephpant::class);
+        return $this->belongsToMany(Elephpant::class, 'user_elephpant');
     }
 }

@@ -14,10 +14,10 @@ class ElephpantSeeder extends Seeder
      */
     public function run(): void
     {
-        foreach (User::all() as $user) {
-            Elephpant::factory(rand(1,15))->create([
-                'user_id' => $user->id,
-            ]);
-        }
+        User::all()->each(function (User $user): void {
+            $user->elephpants()->saveMany(
+                Elephpant::factory()->count(rand(1,15))->create()
+            );
+        });
     }
 }
