@@ -13,7 +13,7 @@ class HerdTest extends TestCase
     /**
      * A basic feature test example.
      */
-    public function test_routes(): void
+    public function test_route_without_id(): void
     {
         $user = User::factory()->create();
 
@@ -23,10 +23,23 @@ class HerdTest extends TestCase
         $response->assertStatus(200);
     }
 
+    public function test_route_with_id(): void
+    {
+        $user = User::factory()->create(['id' => 1]);
+        $user_2 = User::factory()->create(['id' => 2]);
+
+        $response = $this
+            ->actingAs($user)
+            ->get('/herd/2');
+        $response->assertStatus(200);
+    }
+
     public function test_elephpant_data(): void
     {
         $user = User::factory()->create();
-        $user_elephpants = Elephpant::factory(5)->create(['user_id' => $user->id]);
+        $user_elephpants = $user->elephpants()->saveMany(
+            Elephpant::factory()->count(5)->create()
+        );
         $response = $this
             ->actingAs($user)
             ->get('/herd');

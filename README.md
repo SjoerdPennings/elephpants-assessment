@@ -17,13 +17,15 @@ Installatie:
 - Draai `composer install` en `npm install`.
 - Kopieer `.env.example` naar `.env` en vul de database gegevens in.
 - Draai `php artisan migrate --seed` en `npm run dev`.
+- Om te testen, draai `php artisan test`.
 
 Inloggegevens:
 - Email: test@example.com
 - Password: password
 
 TODO:
-- Zoekbalk voor elephpants [WIP]
+- Voeg elephpants toe aan je herd. [WIP]
+- Zoekbalk voor elephpants
 - Zoekbalk voor gebruikers die een bepaalde elephpant hebben
   - Deze kan mogelijk met de zoekresultaten van de elephpants gecombineerd worden. Laat deze resultaten apart zien.
-- Voeg elephpants toe aan je herd.
+

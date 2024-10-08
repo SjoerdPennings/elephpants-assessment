@@ -24,10 +24,7 @@ class ElephpantController extends Controller
             $title = "Your Herd";
             $id = auth()->id();
         } else {
-            $title = 'Herd of ' . User::find($id)->name;
-        }
-        if (User::find($id) == null) {
-            abort(404);
+            $title = 'Herd of ' . User::find($id)?->name;
         }
 
         return view('species', [
