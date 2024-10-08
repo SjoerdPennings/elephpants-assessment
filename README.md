@@ -1,4 +1,4 @@
-Urenregistratie:
+# Urenregistratie:
 - Ma 07-10
 15:15-15:30 - Laravel & Laravel Breeze geinstalleerd
 15:30-15:45 - Models, Controllers, Routing
@@ -20,11 +20,11 @@ Urenregistratie:
 
 ---
 
-Inloggegevens:
+# Inloggegevens:
 - Email: test@example.com
 - Password: password
 
-Installatie:
+# Installatie:
 - Draai `composer install` en `npm install`.
 - Kopieer `.env.example` naar `.env` en vul de database gegevens in.
 - Draai `php artisan migrate --seed` en `npm run dev`.
@@ -32,19 +32,19 @@ Installatie:
 
 ---
 
-Pagina's
+# Pagina's
 - Species: Dit is een lijst van alle elephpants, ongeacht of je ze in je herd hebt.
 - Herd: Dit is een lijst van alle elephpants die je in je herd hebt.
 - Ranking: Dit is een lijst van alle gebruikers, en hoeveel elephpants ze in hun herd hebben.
 
-Models/tabellen:
+# Models/tabellen:
 - User/users: Gebruikers van de site.
 - Elephpant/elephpants: Elephpants die je kan verzamelen.
 - user_elephpant: Pivot tabel voor de many-to-many relatie tussen User en Elephpant.
 
 ---
 
-Volgende stappen:
+# Volgende stappen:
 - Zoekbalk voor elephpants
 - Zoekbalk voor gebruikers die een bepaalde elephpant hebben
   - Deze kan mogelijk met de zoekresultaten van de elephpants gecombineerd worden. Laat deze resultaten apart zien.
