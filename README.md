@@ -9,8 +9,10 @@ Di 08-10
 09:45-10:05 - PHPUnit tests gemaakt.
 10:05-10:15 - Herd aangepast zodat je de herds van anderen kan zien. (/herd/{id}) 
 10:15-10:40 - Models/DB relatie aangepast van one-to-many naar many-to-many, dit is meer zoals elephpants.me werkt.
+10:40-10:45 - Extra unit tests voor Herd toegevoegd.
+10:45-10:55 - Seeder aangepast zodat er meer duplicates zijn. Ranking-pagina verder getest.
 
-02:55/04:00 Totaal
+03:10/04:00 Totaal
 
 
 Installatie:
@@ -18,6 +20,11 @@ Installatie:
 - Kopieer `.env.example` naar `.env` en vul de database gegevens in.
 - Draai `php artisan migrate --seed` en `npm run dev`.
 - Om te testen, draai `php artisan test`.
+
+Pagina's
+- Species: Dit is een lijst van alle elephpants, ongeacht of je ze in je herd hebt.
+- Herd: Dit is een lijst van alle elephpants die je in je herd hebt.
+- Ranking: Dit is een lijst van alle gebruikers, en hoeveel elephpants ze in hun herd hebben.
 
 Inloggegevens:
 - Email: test@example.com
